@@ -8,7 +8,7 @@ This repository contains only the initial work for the project.
 Project started in March 2020 (and abandoned shortly after).
 
 <p align="center">
-	<b>Overview of the project pipeline</b><br><br><br>
+	<b>Overview of the project pipeline</b><br><br>
 	<img align="center" src="/pre-processing/overview.png"/>
 </p>
 
