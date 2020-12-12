@@ -25,6 +25,18 @@ pip install opencv-python
 
 ## Results
 
-Steps 1 to 4 where successfully accomplished.
-There was never a response from the team in the lab with the dataset of samples and so step 5 could not be implemented.
+Steps 1. to 4. where successfully accomplished.
+There was never a response from the team in the lab with the dataset of samples and so steps 5. and 6. could not be implemented.
+
+Steps 1. and 2. were easily accomplished with the Python library [OpenCV](https://docs.opencv.org/master/index.html).
+
+For step 3., a couple of image processing techniques were used:
+
+* Background detection
+* High saturation threshold
+* Background removal
+* Euclidean distance mask
+* Watershed
+
+![](pre-processing/image_processing - 0 - original.PNG)
 
