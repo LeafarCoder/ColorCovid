@@ -76,13 +76,13 @@ For step 4., all the samples were processed and the color features stored in a c
 * A visualization tool allows to observe each individual sample and its color features.
 
 <p align="center">
-	<img align="center" src="/samples_visualization/case2_full_data.PNG" width="600"/>
+	<img align="center" src="/samples_visualization/case2_full_data.PNG" width="750"/>
 </p>
 
-* It also allows to choose a type of boarder to show
+* It also allows to choose a type of border to show
 
 <p align="center">
-	<b>Samples with boarder showing</b><br>
+	<b>Samples with border showing</b><br>
 	<img align="center" src="/samples_visualization/case1_sorted_hue_value-broader_view_of_sample.PNG" width="550"/>
 </p>
 
@@ -95,16 +95,16 @@ For step 4., all the samples were processed and the color features stored in a c
 * It also allows to order the list of samples by any given parameter
 
 <p align="center">
-	<b>Order by RGB value</b><br>
+	<b>Order by RGB value</b> (red in this case)<br>
 	<img align="center" src="/samples_visualization/case2_sorted_by_red_value.PNG" width="550"/>
 </p>
 
 <p align="center">
 	<b>Order by test result (positive/negative)</b><br>
-	<img align="center" src="/samples_visualization/case1_sorted_by_result.PNG" width="550"/>
+	<img align="center" src="/samples_visualization/case2_sorted_by_result.PNG" width="550"/>
 </p>
 
 <p align="center">
 	<b>Order by sample index</b><br>
-	<img align="center" src="/samples_visualization/case1_sorted_by_index.PNG" width="550"/>
+	<img align="center" src="/samples_visualization/case2_sorted_by_index.PNG" width="550"/>
 </p>
