@@ -32,10 +32,11 @@ Steps 1. and 2. were easily accomplished with the Python library [OpenCV](https:
 
 For step 3., a couple of image processing techniques were used:
 
+| | |
 :----:|:------:
-**0** Original screenshot<br><img src="/pre-processing/image_processing_0_original.PNG" width="400"/> | **1** First, detect the background <br> <img src="/pre-processing/image_processing_1_background_detection.PNG" width="400"/>
-**2** Use a high saturation threshold to broadly detect the wells<br> <img src="/pre-processing/image_processing_2_high_saturation_threshold.PNG" width="400"/> | **3** Remove the background <br> <img src="/pre-processing/image_processing_3_background_removal.PNG" width="400"/>
-**4** Use an Euclidean distance mask <br> <img src="/pre-processing/image_processing_4_euclidean_distance.PNG" width="400"/> | **5** Apply watershed and show markers <br> <img src="/pre-processing/image_processing_5_marker_by_watershedPNG.PNG" width="400"/>
+**0** Original screenshot<br><img src="/pre-processing/image_processing_0_original.PNG" width="350"/> | **1** First, detect the background <br> <img src="/pre-processing/image_processing_1_background_detection.PNG" width="350"/>
+**2** Use a high saturation threshold to broadly detect the wells<br> <img src="/pre-processing/image_processing_2_high_saturation_threshold.PNG" width="350"/> | **3** Remove the background <br> <img src="/pre-processing/image_processing_3_background_removal.PNG" width="350"/>
+**4** Use an Euclidean distance mask <br> <img src="/pre-processing/image_processing_4_euclidean_distance.PNG" width="350"/> | **5** Apply watershed and show markers <br> <img src="/pre-processing/image_processing_5_marker_by_watershedPNG.PNG" width="350"/>
 
 
 
