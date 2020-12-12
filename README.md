@@ -32,21 +32,30 @@ Steps 1. and 2. were easily accomplished with the Python library [OpenCV](https:
 
 For step 3., a couple of image processing techniques were used (click on the images to show zoomed version):
 
+<details>
+  <summary>Click to see an example of the processing steps</summary>
+  
 | | |
 :----:|:------:
 **0** Original screenshot<br><img src="/pre-processing/image_processing_0_original.PNG" width="350"/> | **1** First, detect the background <br> <img src="/pre-processing/image_processing_1_background_detection.PNG" width="350"/>
 **2** Use a high saturation threshold to broadly detect the wells<br> <img src="/pre-processing/image_processing_2_high_saturation_threshold.PNG" width="350"/> | **3** Remove the background <br> <img src="/pre-processing/image_processing_3_background_removal.PNG" width="350"/>
 **4** Use an Euclidean distance mask <br> <img src="/pre-processing/image_processing_4_euclidean_distance.PNG" width="350"/> | **5** Apply watershed and show markers <br> <img src="/pre-processing/image_processing_5_marker_by_watershedPNG.PNG" width="350"/>
 
+</details>
+
 With this, samples can be detected in a variety of array displays, well shapes and light conditions. Consider the following examples:
+
+<details>
+  <summary>Click to see examples of detected samples</summary>
 
 | original screenshot | Samples detected |
 :----:|:------:
-<img src="/tests/tests1.PNG" width="350"/> | <img src="/tests/results1.PNG" width="350"/>
-<img src="/tests/tests2.PNG" width="350"/> | <img src="/tests/results2.PNG" width="350"/>
-<img src="/tests/tests2.PNG" width="350"/> | <img src="/tests/results3.PNG" width="350"/>
-<img src="/tests/tests3.PNG" width="350"/> | <img src="/tests/results4.PNG" width="350"/>
+<img src="/tests/tests1.PNG" width="350"/> | <img src="/tests/result1.PNG" width="350"/>
+<img src="/tests/tests2.PNG" width="350"/> | <img src="/tests/result2.PNG" width="350"/>
+<img src="/tests/tests3.PNG" width="350"/> | <img src="/tests/result3.PNG" width="350"/>
+<img src="/tests/tests4.PNG" width="350"/> | <img src="/tests/result4.PNG" width="350"/>
 
+</details>
 
 For step 4., all the samples were processed and the color features stored.
 A visualization tool allowed to observe each individual sample, its color features and even order the samples by any given characteristic.
