@@ -69,23 +69,23 @@ Click on the images to see a zoomed version on a new page.
 
 For step 4., all the samples were processed and the color features stored in a csv. file:
 
-<img align="center" src="/samples_visualization/case#2_CSV_file.PNG" width="450"/>
+<img align="center" src="/samples_visualization/case2_CSV_file.PNG" width="450"/>
 
 A visualization tool allows to observe each individual sample and its color features.
 
 * Choose type of boarder to show
 | Samples with boarder showing | Samples cropped to area of interest |
 :----:|:------:
-<img src="/samples_visualization/case#1_sorted_by_hue.PNG" width="350"/> | <img src="/samples_visualization/case#1_sorted_hue_value-broader_view_of_sample.PNG" width="350"/>
+<img src="/samples_visualization/case1_sorted_by_hue.PNG" width="350"/> | <img src="/samples_visualization/case1_sorted_hue_value-broader_view_of_sample.PNG" width="350"/>
 
  
 * It also allows to order the list of samples by any given parameter
 <p align="center">
 	###### Order by color hue
-	<img align="center" src="/samples_visualization/case#1_sorted_by_hue.PNG" width="350"/>
+	<img align="center" src="/samples_visualization/case1_sorted_by_hue.PNG" width="350"/>
 </p>
 
 <p align="center">
 	###### Order by color hue
-	<img align="center" src="/samples_visualization/case#1_sorted_by_hue.PNG" width="350"/>
+	<img align="center" src="/samples_visualization/case1_sorted_by_hue.PNG" width="350"/>
 </p>
