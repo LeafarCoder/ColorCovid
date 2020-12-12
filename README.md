@@ -54,10 +54,10 @@ Click on the images to see a zoomed version on a new page.
 
 | original screenshot | Samples detected |
 :----:|:------:
-<img src="/tests/tests1.PNG" width="350"/> | <img src="/tests/result1.PNG" width="350"/>
-<img src="/tests/tests2.PNG" width="350"/> | <img src="/tests/result2.PNG" width="350"/>
-<img src="/tests/tests3.PNG" width="350"/> | <img src="/tests/result3.PNG" width="350"/>
-<img src="/tests/tests4.PNG" width="350"/> | <img src="/tests/result4.PNG" width="350"/>
+<img src="/tests/tests1.PNG" width="350"/> | <img src="/tests/results1.PNG" width="350"/>
+<img src="/tests/tests2.PNG" width="350"/> | <img src="/tests/results2.PNG" width="350"/>
+<img src="/tests/tests3.PNG" width="350"/> | <img src="/tests/results3.PNG" width="350"/>
+<img src="/tests/tests4.PNG" width="350"/> | <img src="/tests/results4.PNG" width="350"/>
 
 </details>
 
