@@ -87,7 +87,7 @@ For step 4., all the samples were processed and the color features stored in a c
 </p>
 
 <p align="center">
-	<b>Samples cropped to area of interest</b><br>
+	<b>Samples cropped to region of interest (ROI)</b><br>
 	<img align="center" src="/samples_visualization/case1_sorted_by_hue.PNG" width="550"/>
 </p>
 
@@ -95,7 +95,7 @@ For step 4., all the samples were processed and the color features stored in a c
 * It also allows to order the list of samples by any given parameter
 
 <p align="center">
-	<b>Order by RGB value</b> (red in this case)<br>
+	<b>Order by RGB value</b> (red channel, in this case)<br>
 	<img align="center" src="/samples_visualization/case2_sorted_by_red_value.PNG" width="550"/>
 </p>
 
@@ -106,5 +106,5 @@ For step 4., all the samples were processed and the color features stored in a c
 
 <p align="center">
 	<b>Order by sample index</b><br>
-	<img align="center" src="/samples_visualization/case2_sorted_by_index.PNG" width="550"/>
+	<img align="center" src="/samples_visualization/case2_sorted_by_sample_index.PNG" width="550"/>
 </p>
