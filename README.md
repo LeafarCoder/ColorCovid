@@ -25,8 +25,14 @@ pip install opencv-python
 
 ## Results
 
+#### Summary
+
 Steps 1. to 4. where successfully accomplished.
+
 There was never a response from the team in the lab with the dataset of samples and so steps 5. and 6. could not be implemented.
+
+
+#### Detailed results
 
 Steps 1. and 2. were easily accomplished with the Python library [OpenCV](https://docs.opencv.org/master/index.html).
 
@@ -45,7 +51,7 @@ Original screenshot<br><img src="/pre-processing/image_processing_0_original.PNG
 
 </details>
 
-With this, samples can be detected in a variety of array displays, well shapes and light conditions. Consider the following examples:
+With this pipeline, samples can be detected in a variety of array displays, well shapes and light conditions. Consider the following examples:
 
 <details>
   <summary>Click to expand and see examples of detected samples</summary>
@@ -61,9 +67,25 @@ Click on the images to see a zoomed version on a new page.
 
 </details>
 
-For step 4., all the samples were processed and the color features stored.
-A visualization tool allowed to observe each individual sample, its color features and even order the samples by any given characteristic.
+For step 4., all the samples were processed and the color features stored in a csv. file:
 
+<img align="center" src="/samples_visualization/case#2_CSV_file.PNG" width="450"/>
 
+A visualization tool allows to observe each individual sample and its color features.
 
+* Choose type of boarder to show
+| Samples with boarder showing | Samples cropped to area of interest |
+:----:|:------:
+<img src="/samples_visualization/case#1_sorted_by_hue.PNG" width="350"/> | <img src="/samples_visualization/case#1_sorted_hue_value-broader_view_of_sample.PNG" width="350"/>
 
+ 
+* It also allows to order the list of samples by any given parameter
+<p align="center">
+	###### Order by color hue
+	<img align="center" src="/samples_visualization/case#1_sorted_by_hue.PNG" width="350"/>
+</p>
+
+<p align="center">
+	###### Order by color hue
+	<img align="center" src="/samples_visualization/case#1_sorted_by_hue.PNG" width="350"/>
+</p>
