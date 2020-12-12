@@ -73,29 +73,38 @@ For step 4., all the samples were processed and the color features stored in a c
 	<img align="center" src="/samples_visualization/case2_CSV_file.PNG" width="450"/>
 </p>
 
-A visualization tool allows to observe each individual sample and its color features.
+* A visualization tool allows to observe each individual sample and its color features.
 
-* Choose type of boarder to show
+<p align="center">
+	<img align="center" src="/samples_visualization/case2_full_data.PNG" width="600"/>
+</p>
+
+* It also allows to choose a type of boarder to show
 
 <p align="center">
 	<b>Samples with boarder showing</b><br>
-	<img align="center" src="/samples_visualization/case1_sorted_by_hue.PNG" width="450"/>
+	<img align="center" src="/samples_visualization/case1_sorted_hue_value-broader_view_of_sample.PNG" width="550"/>
 </p>
 
 <p align="center">
 	<b>Samples cropped to area of interest</b><br>
-	<img align="center" src="/samples_visualization/case1_sorted_hue_value-broader_view_of_sample.PNG" width="450"/>
+	<img align="center" src="/samples_visualization/case1_sorted_by_hue.PNG" width="550"/>
 </p>
 
  
 * It also allows to order the list of samples by any given parameter
 
 <p align="center">
-	<b>Order by color hue</b><br>
-	<img align="center" src="/samples_visualization/case1_sorted_by_hue.PNG" width="450"/>
+	<b>Order by RGB value</b><br>
+	<img align="center" src="/samples_visualization/case2_sorted_by_red_value.PNG" width="550"/>
 </p>
 
 <p align="center">
-	<b>Order by color hue</b><br>
-	<img align="center" src="/samples_visualization/case1_sorted_by_hue.PNG" width="450"/>
+	<b>Order by test result (positive/negative)</b><br>
+	<img align="center" src="/samples_visualization/case1_sorted_by_result.PNG" width="550"/>
+</p>
+
+<p align="center">
+	<b>Order by sample index</b><br>
+	<img align="center" src="/samples_visualization/case1_sorted_by_index.PNG" width="550"/>
 </p>
