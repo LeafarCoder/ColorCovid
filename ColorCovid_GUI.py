@@ -16,7 +16,7 @@ def vp_start_gui():
     global val, w, root, vc
     root = tk.Tk()
     root.state('zoomed')
-    root.iconbitmap('virus.ico')
+    root.iconbitmap('resources/virus.ico')
     top = tl.Toplevel1 (root)
     ColorCovid_support.init(root, top)
     root.mainloop()
