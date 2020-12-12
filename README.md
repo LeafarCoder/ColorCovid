@@ -98,3 +98,6 @@ For step 4., all the samples were processed and the color features stored in a c
 <img align="center" src="/samples_visualization/case2_sorted_by_red_value.PNG" width="250"/> | <img align="center" src="/samples_visualization/case2_sorted_by_result.PNG" width="250"/> | <img align="center" src="/samples_visualization/case2_sorted_by_sample_index.PNG" width="250"/>
 
  
+ ## Author
+ 
+ Rafael Correia
