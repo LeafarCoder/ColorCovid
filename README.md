@@ -30,23 +30,27 @@ There was never a response from the team in the lab with the dataset of samples 
 
 Steps 1. and 2. were easily accomplished with the Python library [OpenCV](https://docs.opencv.org/master/index.html).
 
-For step 3., a couple of image processing techniques were used (click on the images to show zoomed version):
+For step 3., a couple of image processing techniques were used.
 
 <details>
-  <summary>Click to see an example of the processing steps</summary>
-  
+  <summary>Click to expand and see an example of the processing steps</summary>
+
+Click on the images to see a zoomed version on a new page.
+
 | | |
 :----:|:------:
-**0** Original screenshot<br><img src="/pre-processing/image_processing_0_original.PNG" width="350"/> | **1** First, detect the background <br> <img src="/pre-processing/image_processing_1_background_detection.PNG" width="350"/>
-**2** Use a high saturation threshold to broadly detect the wells<br> <img src="/pre-processing/image_processing_2_high_saturation_threshold.PNG" width="350"/> | **3** Remove the background <br> <img src="/pre-processing/image_processing_3_background_removal.PNG" width="350"/>
-**4** Use an Euclidean distance mask <br> <img src="/pre-processing/image_processing_4_euclidean_distance.PNG" width="350"/> | **5** Apply watershed and show markers <br> <img src="/pre-processing/image_processing_5_marker_by_watershedPNG.PNG" width="350"/>
+Original screenshot<br><img src="/pre-processing/image_processing_0_original.PNG" width="350"/> | **Step 1** First, detect the background <br> <img src="/pre-processing/image_processing_1_background_detection.PNG" width="350"/>
+**Step 2** Use a high saturation threshold to broadly detect the wells<br> <img src="/pre-processing/image_processing_2_high_saturation_threshold.PNG" width="350"/> | **Step 3** Remove the background <br> <img src="/pre-processing/image_processing_3_background_removal.PNG" width="350"/>
+**Step 4** Use an Euclidean distance mask <br> <img src="/pre-processing/image_processing_4_euclidean_distance.PNG" width="350"/> | **Step 5** Apply watershed and show markers <br> <img src="/pre-processing/image_processing_5_marker_by_watershedPNG.PNG" width="350"/>
 
 </details>
 
 With this, samples can be detected in a variety of array displays, well shapes and light conditions. Consider the following examples:
 
 <details>
-  <summary>Click to see examples of detected samples</summary>
+  <summary>Click to expand and see examples of detected samples</summary>
+
+Click on the images to see a zoomed version on a new page.
 
 | original screenshot | Samples detected |
 :----:|:------:
