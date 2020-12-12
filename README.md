@@ -11,6 +11,7 @@ Project started in March 2020 (and abandoned shortly after).
 	<b>Overview of the project pipeline</b><br><br>
 	<img align="center" src="/pre-processing/overview.png"/>
 </p>
+<br><br>
 
 ## Requirements
 
@@ -101,3 +102,6 @@ For objective 4., all the samples were processed and the color features stored i
  ## Author
  
  Rafael Correia
+ 
+* [LinkedIn](https://www.linkedin.com/in/joserafaelcorreia/)
+* [Sourcerer](https://sourcerer.io/leafarcoder)
