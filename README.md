@@ -78,21 +78,24 @@ A visualization tool allows to observe each individual sample and its color feat
 * Choose type of boarder to show
 
 <p align="center">
-	**Samples with boarder showing**<br>
+	<b>Samples with boarder showing</b><br>
 	<img align="center" src="/samples_visualization/case1_sorted_by_hue.PNG" width="450"/>
 </p>
 
 <p align="center">
+	<b>Samples cropped to area of interest</b><br>
+	<img align="center" src="/samples_visualization/case1_sorted_hue_value-broader_view_of_sample.PNG" width="450"/>
+</p>
 
  
 * It also allows to order the list of samples by any given parameter
 
 <p align="center">
-	**Order by color hue**<br>
+	<b>Order by color hue</b><br>
 	<img align="center" src="/samples_visualization/case1_sorted_by_hue.PNG" width="450"/>
 </p>
 
 <p align="center">
-	**Order by color hue**<br>
+	<b>Order by color hue</b><br>
 	<img align="center" src="/samples_visualization/case1_sorted_by_hue.PNG" width="450"/>
 </p>
