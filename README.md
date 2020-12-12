@@ -99,6 +99,10 @@ For step 4., all the samples were processed and the color features stored in a c
  
 * It also allows to order the list of samples by any given parameter
 
+| **Order by RGB value**<br>(red channel, in this case) | **Order by test result**<br>(positive/negative) | **Order by sample index** |
+:----:|:------:|:----:
+<img align="center" src="/samples_visualization/case2_sorted_by_red_value.PNG" width="250"/> | <img align="center" src="/samples_visualization/case2_sorted_by_result.PNG" width="250"/> | <img align="center" src="/samples_visualization/case2_sorted_by_sample_index.PNG" width="250"/>
+
 <p align="center">
 	<b>Order by RGB value</b> (red channel, in this case)<br>
 	<img align="center" src="/samples_visualization/case2_sorted_by_red_value.PNG" width="550"/>
