@@ -32,16 +32,16 @@ pip install opencv-python
 
 #### Summary
 
-Steps 1. to 4. where successfully accomplished.
+Objectives 1. to 4. where successfully accomplished.
 
-There was never a response from the team in the lab with the dataset of samples and so steps 5. and 6. could not be implemented.
+There was never a response from the team in the lab with the dataset of samples and so the objectives 5. and 6. could not be implemented.
 
 
 #### Detailed results
 
-Steps 1. and 2. were easily accomplished with the Python library [OpenCV](https://docs.opencv.org/master/index.html).
+The objectives 1. and 2. were easily accomplished with the Python library [OpenCV](https://docs.opencv.org/master/index.html).
 
-For step 3., a couple of image processing techniques were used.
+For the 3. objective, a couple of image processing techniques were used.
 
 <details>
   <summary>Click to expand and see an example of the processing steps</summary>
@@ -72,7 +72,7 @@ Click on the images to see a zoomed version on a new page.
 
 </details>
 
-For step 4., all the samples were processed and the color features stored in a csv. file:
+For objective 4., all the samples were processed and the color features stored in a csv. file:
 
 <p align="center">
 	<img align="center" src="/samples_visualization/case2_CSV_file.PNG" width="450"/>
