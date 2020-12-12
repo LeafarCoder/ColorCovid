@@ -38,5 +38,7 @@ For step 3., a couple of image processing techniques were used:
 * Euclidean distance mask
 * Watershed
 
-![](/pre-processing/image_processing_0_original.PNG)
+img[alt=processing] { width: 200px; }
+
+![processing](/pre-processing/image_processing_0_original.PNG)
 
