@@ -1,6 +1,6 @@
 # ColorCovid
-A colaboration with the Faculty of Pharmacy from the University of Lisbon for a Covid-related project.
-The task was: given a photo of an array of test samples for the Covid virus, determine which ones are the positive tests.
+A colaboration between [Faculty of Pharmacy](https://www.ulisboa.pt/en/unidade-organica/faculty-pharmacy) and [IST](http://tecnico.ulisboa.pt/), both from the [University of Lisbon](https://www.ulisboa.pt/), for a Covid-related project.
+The task was to, given a photo of an array of test samples for the Covid virus, determine which ones are the positive tests.
 
 The idea was abandoned and the project did not continue.
 This repository contains only the initial work for the project.
