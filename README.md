@@ -1,107 +1,89 @@
 # ColorCovid
-A colaboration between [Faculty of Pharmacy](https://www.ulisboa.pt/en/unidade-organica/faculty-pharmacy) and [IST](http://tecnico.ulisboa.pt/), both from the [University of Lisbon](https://www.ulisboa.pt/), for a Covid-related project.
-The task was to, given a photo of an array of test samples for the Covid virus, determine which ones are the positive tests.
 
-The idea was abandoned and the project did not continue.
-This repository contains only the initial work for the project.
+A collaboration between [Faculty of Pharmacy](https://www.ulisboa.pt/en/unidade-organica/faculty-pharmacy) and [IST](http://tecnico.ulisboa.pt/), both from the [University of Lisbon](https://www.ulisboa.pt/).
 
-Project started in March 2020 (and abandoned shortly after).
+Given a photograph of an array of COVID-19 test samples, ColorCovid automatically detects each sample well, extracts its color characteristics, and classifies which tests are positive.
 
 <p align="center">
-	<b>Overview of the project pipeline</b><br><br>
-	<img align="center" src="/pre-processing/overview.png"/>
+  <img src="pre-processing/overview.png" width="700"/>
 </p>
-<br><br>
+
+## Features
+
+- **Camera control** — connect any camera to the computer and capture snapshots directly from the GUI
+- **Sample detection** — automatically locates and uniquely indexes each well in the plate, handling variable array layouts, well shapes, and lighting conditions
+- **Color feature extraction** — computes HSV and RGB channel averages per sample and exports them to CSV
+- **Classification** — classifies each sample as positive or negative based on its color features
 
 ## Requirements
 
-Install [OpenCV](https://docs.opencv.org/master/index.html) library to access the camera and take photos of the samples:
+```bash
+pip install opencv-python numpy matplotlib scikit-image scipy pillow imutils easygui
 ```
-pip install opencv-python
-```
 
-## Objectives
+## How It Works
 
-1. Allow the control of any camera connected to the computer.
-2. Store snapshots of the samples in a light-controled environment.
-3. Identify the portions of the image with the samples (and index each samples uniquely).
-4. Extract the color characteristics of each sample.
-5. Train a classifier based on a large dataset (classify outcome of the test based on color features).
-6. Test on new data and assess performance.
+The image processing pipeline detects and segments individual wells through five stages:
 
-## Results
-
-#### Summary
-
-Objectives 1. to 4. where successfully accomplished.
-
-There was never a response from the team in the lab with the dataset of samples and so the objectives 5. and 6. could not be implemented.
-
-
-#### Detailed results
-
-The objectives 1. and 2. were easily accomplished with the Python library [OpenCV](https://docs.opencv.org/master/index.html).
-
-For the 3. objective, a couple of image processing techniques were used.
-
-<details>
-  <summary>Click to expand and see an example of the processing steps</summary>
-
-Click on the images to see a zoomed version on a new page.
+<details open>
+  <summary><b>Processing steps</b></summary>
+<br>
 
 | | |
 :----:|:------:
-Original screenshot<br><img src="/pre-processing/image_processing_0_original.PNG" width="350"/> | **Step 1** First, detect the background <br> <img src="/pre-processing/image_processing_1_background_detection.PNG" width="350"/>
-**Step 2** Use a high saturation threshold to broadly detect the wells<br> <img src="/pre-processing/image_processing_2_high_saturation_threshold.PNG" width="350"/> | **Step 3** Remove the background <br> <img src="/pre-processing/image_processing_3_background_removal.PNG" width="350"/>
-**Step 4** Use an Euclidean distance mask <br> <img src="/pre-processing/image_processing_4_euclidean_distance.PNG" width="350"/> | **Step 5** Apply watershed and show markers <br> <img src="/pre-processing/image_processing_5_marker_by_watershedPNG.PNG" width="350"/>
+Original image<br><img src="pre-processing/image_processing_0_original.PNG" width="350"/> | **Step 1** Detect the background<br><img src="pre-processing/image_processing_1_background_detection.PNG" width="350"/>
+**Step 2** High-saturation threshold to broadly locate the wells<br><img src="pre-processing/image_processing_2_high_saturation_threshold.PNG" width="350"/> | **Step 3** Remove the background<br><img src="pre-processing/image_processing_3_background_removal.PNG" width="350"/>
+**Step 4** Euclidean distance mask<br><img src="pre-processing/image_processing_4_euclidean_distance.PNG" width="350"/> | **Step 5** Watershed algorithm — final sample markers<br><img src="pre-processing/image_processing_5_marker_by_watershedPNG.PNG" width="350"/>
 
 </details>
 
-With this pipeline, samples can be detected in a variety of array displays, well shapes and light conditions. Consider the following examples:
+Detection works across a range of plate formats and lighting conditions:
 
 <details>
-  <summary>Click to expand and see examples of detected samples</summary>
+  <summary><b>Detection examples</b></summary>
+<br>
 
-Click on the images to see a zoomed version on a new page.
-
-| original screenshot | Samples detected |
+| Original | Detected samples |
 :----:|:------:
-<img src="/tests/tests1.PNG" width="350"/> | <img src="/tests/results1.PNG" width="350"/>
-<img src="/tests/tests2.PNG" width="350"/> | <img src="/tests/results2.PNG" width="350"/>
-<img src="/tests/tests3.PNG" width="350"/> | <img src="/tests/results3.PNG" width="350"/>
-<img src="/tests/tests4.PNG" width="350"/> | <img src="/tests/results4.PNG" width="350"/>
+<img src="tests/tests1.PNG" width="350"/> | <img src="tests/results1.PNG" width="350"/>
+<img src="tests/tests2.PNG" width="350"/> | <img src="tests/results2.PNG" width="350"/>
+<img src="tests/tests3.PNG" width="350"/> | <img src="tests/results3.PNG" width="350"/>
+<img src="tests/tests4.PNG" width="350"/> | <img src="tests/results4.PNG" width="350"/>
 
 </details>
 
-For objective 4., all the samples were processed and the color features stored in a csv. file:
+## Color Analysis
+
+Each detected sample is uniquely indexed on the plate:
 
 <p align="center">
-	<img align="center" src="/samples_visualization/case2_CSV_file.PNG" width="450"/>
+  <img src="samples_visualization/case2_markers.PNG" width="580"/>
 </p>
 
-* A visualization tool allows to observe each individual sample and its color features.
+Color features (H, S, V, R, G, B averages) for all samples are exported to a CSV file:
 
 <p align="center">
-	<img align="center" src="/samples_visualization/case2_full_data.PNG" width="750"/>
+  <img src="samples_visualization/case2_CSV_file.PNG" width="450"/>
 </p>
 
-* It also allows to choose a type of border to show
+A built-in visualization tool lets you inspect each sample individually and browse all color data at a glance:
 
-| Samples with border showing | Samples cropped to region of interest (ROI) |
+<p align="center">
+  <img src="samples_visualization/case2_full_data.PNG" width="750"/>
+</p>
+
+Samples can be shown with their surrounding border or cropped tightly to the region of interest:
+
+| With border | Cropped to ROI |
 :----:|:------:
-<img align="center" src="/samples_visualization/case1_sorted_hue_value-broader_view_of_sample.PNG" width="375"/> | <img align="center" src="/samples_visualization/case1_sorted_by_hue.PNG" width="375"/>
+<img src="samples_visualization/case1_sorted_hue_value-broader_view_of_sample.PNG" width="375"/> | <img src="samples_visualization/case1_sorted_by_hue.PNG" width="375"/>
 
- 
-* It also allows to order the list of samples by any given parameter
+The list can be sorted by any parameter — color channel, test result, or sample index:
 
-| **Order by RGB value**<br>(red channel, in this case) | **Order by test result**<br>(positive/negative) | **Order by sample index** |
+| By RGB value (red channel) | By test result | By sample index |
 :----:|:------:|:----:
-<img align="center" src="/samples_visualization/case2_sorted_by_red_value.PNG" width="250"/> | <img align="center" src="/samples_visualization/case2_sorted_by_result.PNG" width="250"/> | <img align="center" src="/samples_visualization/case2_sorted_by_sample_index.PNG" width="250"/>
+<img src="samples_visualization/case2_sorted_by_red_value.PNG" width="250"/> | <img src="samples_visualization/case2_sorted_by_result.PNG" width="250"/> | <img src="samples_visualization/case2_sorted_by_sample_index.PNG" width="250"/>
 
- 
- ## Author
- 
- Rafael Correia
- 
-* [LinkedIn](https://www.linkedin.com/in/joserafaelcorreia/)
-* [Sourcerer](https://sourcerer.io/leafarcoder)
+## Author
+
+Rafael Correia — [LinkedIn](https://www.linkedin.com/in/joserafaelcorreia/)
